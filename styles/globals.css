@@ -1,3 +1,4 @@
+/*
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -105,3 +106,142 @@ a {
     color-scheme: dark;
   }
 }
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  word-break:break-all;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../public/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 100px 100px 100px 100px;
+}
+
+article {
+  width:90%;
+  margin:auto;
+  margin-top:200px;
+  justify-content:space-between;
+  align-items:center;
+}
+
+footer {
+  padding : 100px 100px;
+  border-top:1px solid #E6E6E6;
+}
+
+
+
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  justify-content: center;
+  grid-gap: 30px;
+  margin-top: 80px;
+}
+
+.grid-services .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 11px;
+}
+
+ .grid-services .card .info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -20px;
+}
+
+.grid-services .card .info h3 {
+  font-size: 30px;
+  line-height: 40px;
+}
+  
+.grid-services .card .info h5 {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.grid-services .card .info p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 25px;
+}
+
+.grid-services .card:nth-of-type(1) .info h3 {
+  color: #fff;
+}
+
+.grid-services .card:nth-of-type(1) .info h5 {
+  color: #fff;
+}
+
+.grid-services .card:nth-of-type(1) .info p {
+  color: #fff;
+}
+
+.grid-services .card:nth-of-type(2) .info h3 {
+  color: #534f5e;
+}
+
+.grid-services .card:nth-of-type(2) .info h5 {
+  color: #534f5e;
+}
+
+
+ .grid-services .card:nth-of-type(2) .info p {
+  color: #534f5e;
+}
+
+ .grid-services .card:nth-of-type(3) .info h3 {
+  color: #161864;
+}
+
+ .grid-services .card:nth-of-type(3) .info h5 {
+color: #161864;
+}
+
+.grid-services .card:nth-of-type(3) .info p {
+  color: #161864;
+}
+
+.grid-services .card:nth-of-type(1) {
+  background: #525FFB;
+}
+
+.grid-services .card:nth-of-type(2) {
+  background: #f6f6f6;
+  position: relative;
+  top: 50px;
+}
+
+.grid-services .card:nth-of-type(3) {
+  background: #d1f1ff;
+}
+

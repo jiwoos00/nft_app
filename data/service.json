@@ -1,0 +1,48 @@
+{
+    "service1":[
+        {
+            "title": "NFT 상장을 발급하세요",
+            "description": "In Bertify, anyone can easily issue and manage NFT."
+        }
+    ],
+    "service2": [
+        {
+            "id": 1,
+            "title": "NFT (Non-Fungible Token)",
+            "description": "대체할 수 없는 토큰",
+            "description2": "NFT 기술을 활용한 인증서로 위·변조가 불가능하고 자산에 대한 원본 인증과 소유권 증명이 가능합니다.",
+            "icon": "/services/nftmain.png"
+        },
+        {
+            "id": 2,
+            "title": "Excellent accessibility",
+            "description": "뛰어난 접근성",
+            "description2": "인터넷 환경에서도 간편하게 증명서 발행과 발급이 가능하기에 행정 접근성 및 편의성을 높일 수 있습니다.  ",
+            "icon": "/services/walletmain.png"
+        },
+        {
+            "id": 3,
+            "title": "Using Blockchain Technology",
+            "description": "블록체인 기술 활용",
+            "description2": "블록체인 기술을 기반으로한 누구나 신뢰할 수 있는 인증서로, 블록체인에 모든 거래 내역이 기록되어 위조나 삭제가 불가능합니다.",
+            "icon": "/services/mainblockchain.png"
+        }
+    ],
+    "service3":[
+        {
+            "title": "인증된 계정이란?",
+            "description": "계정에 파란색 체크 표시가 있으면 당사 플랫폼에서 인증되었음을 의미합니다. 본 플랫폼에서 계정이 확인되는지는 당사 플랫폼의 재량에 달려 있습니다. 당사는 얻을 수 있는 최대한의 정보를 바탕으로 최선의 결정을 내릴 것입니다.",
+            "description2":"위 양식을 다운로드하고 서명하신 후 필요한 서류를 bertify_js@gmail.com으로 보내주시기 바랍니다.",
+            "image": "/document.jpg"
+        }   
+    ],
+
+    "footer":[
+        {
+            "logo": "/logo.png",
+            "number" : "사업자등록번호 619",
+            "service" : "이용약관 | 개인정보처리방침 | 이용면책조항",
+            "footer" : "©copyright.JISUNG"
+        }
+    ]
+}
