@@ -31,7 +31,6 @@ export default function mypage({ caver, account, newKip17addr }) {
     setValue(newValue);
   };
 
-  console.log(account)
   useEffect(()=>{
     axios.get('/api/userTable',{
       params:{addr:account}

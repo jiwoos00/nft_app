@@ -8,14 +8,13 @@ export default async function handler(req, res) {
     if (req.method==="POST"){
         const random=req.body.random
         const tokenId=req.body.tokenId
-        
 
         const check=await prisma.Random.findMany({
             where : {
                 tokenId : tokenId
             }
         })
-
+        
         if(check==""){
             await prisma.Random.create({
                 data: {

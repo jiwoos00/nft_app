@@ -37,17 +37,17 @@ export default function upload({ caver, account, newKip17addr }) {
     const selected_id=selected.options[selected.selectedIndex].value;
 
     setCategory(selected_id);
-    console.log(category)
   }
 
    
-
+  
   const createNFT = async () =>{
     const tokenContract=await new caver.klay.Contract(nfts.abi, newKip17addr,{
       from : account,
     });
     tokenContract.options.address=newKip17addr;
     
+  
     if (check()){
       const token=await tokenContract.methods.mint(to,category,fileUrl,name,desc,date)
       .send({

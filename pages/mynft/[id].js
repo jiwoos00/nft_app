@@ -75,7 +75,7 @@ export default function Post ({account, newKip17addr}){
         const random_code= generateUID()
         swal("공유 코드: " + random_code, "해당 코드를 복사한 후 메인화면에서 조회하세요.", "success");
         axios.post('/api/randomTable',{
-            random:randomCode,
+            random:random_code,
             tokenId:Number(id), 
         }).then(res=>{
             setRandomCode(res.data.random)

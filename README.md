@@ -25,3 +25,5 @@ DATABASE_URL="mysql://root:[password]@localhost:3306/[db_name]]"
 
 ### start
 #npm run dev
+
+0x2d80B7111951fFEd8b6bc59BE56913B36303A203
