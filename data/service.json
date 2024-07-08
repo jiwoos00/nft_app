@@ -1,0 +1,18 @@
+{
+  "service1": [
+    {
+      "title": "Issue an NFT certificate.",
+      "description": "In Bertify, anyone can easily issue and manage NFT."
+    }
+  ],
+
+  "footer": [
+    {
+      "logo": "/logo.png",
+      "number": "Business registration number 619",
+      "service": "Terms and Conditions | Privacy Policy | a disclaimer clause",
+      "auth": "https://drive.google.com/file/d/1DQ09ooYTFM9hTbqpWXMOCQym2NOEiEyZ/view",
+      "footer": "© copyright.JISUNG"
+    }
+  ]
+}

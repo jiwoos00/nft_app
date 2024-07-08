@@ -1,0 +1,489 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  word-break: break-all;
+  font-family: "NanumSquare", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  /* 
+  font-family: 'NanumSquareLight'; 
+  font-family: 'NanumSquare';
+  font-family: 'NanumSquareBold';
+  font-family: 'NanumSquareExtraBold';
+  font-family: 'NanumSquareAcb';
+  font-family: 'NanumSquareAceb';
+  font-family: 'NanumSquareAcl';
+  font-family: 'NanumSquareAcr'; 
+  */
+}
+
+html,
+body {
+  background-image: url(../public/background.png);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  padding: 100px 100px;
+}
+
+article {
+  width: 90%;
+  margin: auto;
+  margin-top: 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  padding: 100px 100px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.nav {
+  display: flex;
+  background-color: #ffffffde;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding: 30px 70px;
+}
+
+.nav .nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .nav-btn {
+  display: flex;
+  justify-content: right;
+}
+
+.footer-div {
+  font-family: "NanumSquareAcr";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.require {
+  font-weight: bold;
+  color: crimson;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  margin-top: 10px;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.text-blue {
+  color: #525ffb;
+}
+
+.address {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-family: "NanumSquareAcr";
+  color: #0c135e;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.main-article {
+  display: flex;
+}
+.main-left {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.main-left h1 {
+  font-family: "NanumSquareAcb";
+  font-size: 35px;
+  text-align: left;
+}
+
+.main-left p {
+  color: #b1aaaa;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  padding-top: 15px;
+}
+
+.main-left-form {
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+}
+
+.main-left-input {
+  width: 350px;
+  background: transparent;
+  border: 1px solid #525ffb;
+  border-radius: 40px;
+  padding: 18px;
+  margin-right: 5px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.setting-title {
+  font-family: "NanumSquareExtraBold";
+  color: #0c135e;
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+
+.setting-btn {
+  text-align: end;
+}
+
+.upload-title {
+  font-family: "NanumSquareExtraBold";
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1.upload-title {
+  color: #0c135e;
+  font-size: 40px;
+}
+
+.upload-div {
+  margin-bottom: 30px;
+}
+
+.upload-file label {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 1em;
+  color: #999;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: 0.25em;
+  border-radius: 12px;
+}
+
+.upload-file label:hover {
+  background-color: #e2e2e2;
+}
+
+.upload-file img {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  padding: 0.5em 0.5em;
+  border-radius: 12px;
+}
+
+.upload-file input {
+  display: none;
+}
+
+.upload-submit {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mypage-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.mypage-username {
+  display: flex;
+  align-items: center;
+  font-family: "NanumSquareBold";
+  color: #0c135e;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.mypage-username-text {
+  padding-right: 5px;
+}
+
+.mypage-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mypage-info-copy {
+  font-family: "NanumSquareBold";
+  color: #525ffb;
+  font-size: 15px;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.mypage-info-copy:hover {
+  filter: drop-shadow(5px 5px 5px rgba(133, 133, 133, 0.473));
+}
+
+.mypage-setting {
+  cursor: pointer;
+}
+
+.mypage-setting:hover {
+  filter: drop-shadow(5px 5px 5px rgba(133, 133, 133, 0.473));
+}
+
+.mypage-pannel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mypage-loading-btn {
+  text-align: center;
+}
+.kip-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  align-items: center;
+}
+
+.kip-div {
+  background: rgb(250, 251, 252);
+  text-align: center;
+  border-radius: 15px;
+  margin: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.kip-div:hover {
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.kip-div img {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.kip-text {
+  padding: 0.5em;
+}
+
+.kip-text {
+  padding: 0.5em;
+}
+
+.kip-text-sub {
+  font-family: "NanumSquareAcb";
+  font-size: 15px;
+  color: grey;
+}
+
+.kip-text-title {
+  font-family: "NanumSquareBold";
+  font-size: 20px;
+  color: #0c135e;
+}
+
+.col-main {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+.col-div {
+  width: 50%;
+  background: rgb(250, 251, 252);
+  border-radius: 15px;
+  margin: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.col-div:hover {
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.col-info {
+  font-weight: "NanumSquareAcb";
+  color: #0c135e;
+  margin: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.col-prev {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.detail-main {
+  display: flex;
+  margin-top: 150px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.detail-left-main {
+  width: 50%;
+}
+
+.detail-img {
+  width: 90%;
+  height: 60vh;
+  background: rgb(250, 251, 252);
+  border-radius: 15px;
+  margin: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.detail-img img {
+  border-radius: 15px;
+  margin-top: auto;
+}
+
+.detail-right-main {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 60vh;
+}
+.detail-right-btns {
+  text-align: right;
+  margin: 0 1rem;
+}
+
+.detail-right-icon {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.detail-right-info {
+  height: 100%;
+  background: rgb(250, 251, 252);
+  border-radius: 15px;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.detail-right-info-top {
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(73, 72, 72, 0.374);
+}
+
+.detail-right-info-sub {
+  font-family: "NanumSquareAcr";
+  font-size: 25px;
+  color: #212529;
+  padding-bottom: 5px;
+}
+
+.detail-right-info-title {
+  font-family: "NanumSquareAcb";
+  font-size: 35px;
+  color: #0c135e;
+}
+
+.detail-right-info-content {
+  padding: 20px 20px;
+}
+
+.detail-content {
+  padding-bottom: 20px;
+}
+
+.detail-content-date {
+  font-size: 18px;
+}
+
+.auth {
+  color: blue;
+}
+.right_end {
+  width: 90%;
+  background: rgb(250, 251, 252);
+  border-radius: 15px;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.right_send {
+  padding: 10px 0px;
+}
+.right_send input {
+  padding: 5px 20px;
+  background-color: transparent;
+  border: 1px solid #525ffb;
+  margin: 5px;
+  text-align: left;
+  border-radius: 40px;
+  cursor: pointer;
+  color: #525ffb;
+}
+
+.right_sendbtn button {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #525ffb;
+  text-align: left;
+  color: #525ffb;
+  border-radius: 40px;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+.error-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100vw;  
+  text-align: center;
+}
